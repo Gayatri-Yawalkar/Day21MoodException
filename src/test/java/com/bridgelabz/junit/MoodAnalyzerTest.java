@@ -5,14 +5,14 @@ import com.bridgelabz.moodanalyzer.MoodAnalyzer;
 public class MoodAnalyzerTest {
 	@Test
 	public void givenMessage_whenMoodIsHappy_shouldReturnHappy() {
-		MoodAnalyzer moodAnalyzer=new MoodAnalyzer();
-		String mood=moodAnalyzer.analyzeMood("I am Happy");
+		MoodAnalyzer moodAnalyzer=new MoodAnalyzer("I am Happy");
+		String mood=moodAnalyzer.analyzeMood();
 		assertEquals("HAPPY",mood);
 	}
 	@Test
 	public void givenMessage_whenMoodIsSad_shouldReturnSad() {
-		MoodAnalyzer moodAnalyzer=new MoodAnalyzer();
-		String mood=moodAnalyzer.analyzeMood("I am sad");
+		MoodAnalyzer moodAnalyzer=new MoodAnalyzer("I am sad");
+		String mood=moodAnalyzer.analyzeMood();
 		assertEquals("SAD",mood);
 	}
 }

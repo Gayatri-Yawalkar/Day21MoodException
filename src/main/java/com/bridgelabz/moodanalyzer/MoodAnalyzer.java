@@ -1,7 +1,11 @@
 package com.bridgelabz.moodanalyzer;
-//Uc1
+//Refactor
 public class MoodAnalyzer {
-	public String analyzeMood(String message) {
+	String message;
+	public MoodAnalyzer(String message) {
+		this.message=message;
+	}
+	public String analyzeMood() {
 		if(message.contains("sad")){
 			return "SAD";
 		} else {
